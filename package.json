@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bdangel1/around-express.git"
+    "url": "git+https://github.com/perasper-a/around-express.git"
   },
-  "author": "Malahk C",
+  "author": "M O",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bdangel1/around-express/issues"
+    "url": "https://github.com/perasper-a/around-express/issues"
   },
-  "homepage": "https://github.com/bdangel1/around-express#readme",
+  "homepage": "https://github.com/perasper-a/around-express#readme",
   "devDependencies": {
     "eslint": "^8.40.0",
     "eslint-config-airbnb-base": "^15.0.0",

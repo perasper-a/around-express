@@ -4,7 +4,7 @@ const {
   NOT_FOUND,
   OK,
   BAD_REQUEST,
-} = require('../utils/constance');
+} = require('../utils/constant');
 // GET
 const getCards = async (req, res) => {
   try {
