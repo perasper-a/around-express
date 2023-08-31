@@ -15,7 +15,7 @@ mongoose
 const app = express();
 const userRouter = require('./routes/userRoute');
 const cardRouter = require('./routes/cardsRoute');
-const { NOT_FOUND } = require('./utils/constant');
+const { NOT_FOUND } = require('./utils/constance');
 // use
 app.use((req, res, next) => {
   req.user = {

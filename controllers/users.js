@@ -4,7 +4,7 @@ const {
   NOT_FOUND,
   BAD_REQUEST,
   OK,
-} = require('../utils/constant');
+} = require('../utils/constants');
 
 const getUsers = async (req, res) => {
   try {

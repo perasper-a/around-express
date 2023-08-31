@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/perasper-a/around-express.git"
   },
-  "author": "M O",
+  "author": "A Bakhshiyev",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/perasper-a/around-express/issues"
@@ -23,11 +23,11 @@
     "eslint": "^8.40.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
-    "nodemon": "^2.0.22"
+    "nodemon": "^3.0.1"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "mongoose": "^7.2.3"
+    "mongoose": "^7.5.0"
   },
   "keywords": []
 }

@@ -4,7 +4,7 @@ const {
   NOT_FOUND,
   OK,
   BAD_REQUEST,
-} = require('../utils/constant');
+} = require('../utils/constance');
 // GET
 const getCards = async (req, res) => {
   try {
@@ -43,7 +43,7 @@ const createCard = async (req, res) => {
   }
 };
 
-// DELETE
+// Delete Card
 const deleteCard = async (req, res) => {
   const { cardId } = req.params;
 
