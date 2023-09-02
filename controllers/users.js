@@ -29,7 +29,7 @@ const getUserById = async (req, res) => {
     if (error.name === 'CastError') {
       res
         .status(BAD_REQUEST)
-        .json({ message: 'No user/card found with that id' });
+        .json({ message: 'Id is incorrect' });
     } else {
       res.status(DEFAULT_ERROR).json({ message: 'Error retrieving user' });
     }

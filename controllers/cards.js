@@ -4,7 +4,7 @@ const {
   NOT_FOUND,
   OK,
   BAD_REQUEST,
-} = require('../utils/constance');
+} = require('../utils/constants');
 // GET
 const getCards = async (req, res) => {
   try {
@@ -35,7 +35,7 @@ const createCard = async (req, res) => {
     if (error.name === 'ValidationError') {
       return res
         .status(BAD_REQUEST)
-        .send({ message: 'No user/card found with that id' });
+        .send({ message: 'Data was not found.' });
     }
     return res
       .status(DEFAULT_ERROR)
@@ -57,7 +57,7 @@ const deleteCard = async (req, res) => {
     if (error.name === 'CastError') {
       return res
         .status(BAD_REQUEST)
-        .send({ message: 'No user/card found with that id' });
+        .send({ message: 'Id is incorrect.' });
     }
     return res
       .status(DEFAULT_ERROR)
@@ -80,11 +80,11 @@ const likeCard = async (req, res) => {
     res.send({ message: 'like was added' });
   } catch (err) {
     if (err.statusCode === NOT_FOUND) {
-      res.status(NOT_FOUND).send({ message: 'invalid card id' });
+      res.status(NOT_FOUND).send({ message: 'Data was not found.' });
     } else if (err.name === 'CastError') {
       res
         .status(BAD_REQUEST)
-        .send({ message: 'No user/card found with that id' });
+        .send({ message: 'Id is incorrect.' });
     } else {
       res
         .status(DEFAULT_ERROR)
@@ -108,11 +108,11 @@ const dislikeCard = async (req, res) => {
     res.send({ message: 'like was removed' });
   } catch (err) {
     if (err.statusCode === NOT_FOUND) {
-      res.status(NOT_FOUND).send({ message: 'invalid card id' });
+      res.status(NOT_FOUND).send({ message: 'Data was not found.' });
     } else if (err.name === 'CastError') {
       res
         .status(BAD_REQUEST)
-        .send({ message: 'No user/card found with that id' });
+        .send({ message: 'Id is incorrect.' });
     } else {
       res
         .status(DEFAULT_ERROR)
